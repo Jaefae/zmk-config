@@ -1,4 +1,5 @@
 # Xerneas
+![alt text](https://github.com/Jaefae/zmk-config/blob/main/shinyxerneas.png?raw=true)
 ## Disclaimer
 This is my personal configuration I use for the Sweep Bling LP (Shoutout KeebMaker)
 ## Layout
