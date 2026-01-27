@@ -41,7 +41,7 @@
 
         left_layer {
             bindings = <
-&kp TILDE             &kp BACKSLASH          &kp LCTRL       &kp DOUBLE_QUOTES  &kp SQT             &kp EXCLAMATION    &kp ASTERISK   &kp HASH          &kp SLASH     &kp PLUS
+&kp TILDE             &kp BACKSLASH          &kp CARET       &kp DOUBLE_QUOTES  &kp SQT             &kp EXCLAMATION    &kp ASTERISK   &kp HASH          &kp SLASH     &kp PLUS
 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL     &kp MINUS
 &kp SEMICOLON         &kp COLON              &kp COMMA       &kp PERIOD         &kp UNDERSCORE      &kp PIPE           &kp AMPERSAND  &kp HASH          &kp QUESTION  &kp EXCLAMATION
                                                              &trans             &trans              &trans             &trans
