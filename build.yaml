@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: ferris
+  - board: nice_nano_v2
     shield: cradio_left
-  - board: ferris
+  - board: nice_nano_v2
     shield: cradio_right
