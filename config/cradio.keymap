@@ -32,19 +32,19 @@
 
         default_layer {
             bindings = <
-&kp SEMICOLON  &kp COMMA   &kp PERIOD   &kp P       &kp Y        &kp F      &kp G       &kp C        &kp R       &kp L
-&ht LSHFT A    &ht LALT O  &ht LCTRL E  &ht LGUI U  &kp I        &kp D      &ht RGUI H  &ht RCTRL T  &ht RALT N  &ht RSHFT S
-&kp SQT        &kp Q       &kp J        &kp K       &kp X        &kp B      &kp M       &kp W        &kp V       &kp Z
+&kp Q          &kp W       &kp E        &kp R       &kp T        &kp Y      &kp U       &kp I        &kp O       &kp P
+&ht LSHFT A    &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G        &kp H      &ht RGUI J  &ht RCTRL K  &ht RALT L  &ht RSHFT SEMI
+&kp Z          &kp X       &kp C        &kp V       &kp B        &kp N      &kp M       &kp COMMA    &kp DOT     &kp FSLH
                                         &lt 1 TAB   &kp ENTER    &kp SPACE  &lt 2 BSPC
             >;
         };
 
         left_layer {
             bindings = <
-&kp TILDE             &kp BACKSLASH          &kp CARET       &kp DOUBLE_QUOTES  &kp SQT             &kp EXCLAMATION    &kp ASTERISK   &kp HASH          &kp SLASH     &kp PLUS
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL     &kp MINUS
-&kp SEMICOLON         &kp COLON              &kp COMMA       &kp PERIOD         &kp UNDERSCORE      &kp PIPE           &kp AMPERSAND  &kp HASH          &kp QUESTION  &kp EXCLAMATION
-                                                             &trans             &trans              &trans             &trans
+&kp GRAVE        &kp TILDE    &kp AMPERSAND  &kp PIPE   &kp CARET           &kp HASH        &kp LEFT_BRACE     &kp RIGHT_BRACE     &kp DOUBLE_QUOTES  &kp PLUS
+&kp EXCLAMATION  &kp MINUS    &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN    &kp COLON       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON    &kp QUESTION
+&kp BACKSLASH    &kp AT_SIGN  &kp ASTERISK   &kp SLASH  &kp PERCENT         &kp UNDERSCORE  &kp LEFT_BRACKET   &kp RIGHT_BRACKET   &kp SQT            &kp DOLLAR
+                                             &trans     &trans              &trans          &trans
             >;
         };
 
