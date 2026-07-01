@@ -19,7 +19,9 @@
 #
 ---
 include:
-  - board: nice_nano
-    shield: cradio_left
-  - board: nice_nano
+  - board: nice_nano//zmk
+    shield: cradio_left raw_hid_adapter
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano//zmk
     shield: cradio_right
