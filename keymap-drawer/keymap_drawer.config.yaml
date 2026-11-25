@@ -1,0 +1,44 @@
+parse_config:
+  raw_binding_map:
+    "&caps_word": "CAPS WORD"
+    "&sys_reset": "RESET"
+    "&bootloader": "BOOT"
+    "&studio_unlock": "STUDIO"
+    "&arrow": "->"
+    "&scope": "::"
+    "&fat_arrow": "=>"
+    "&mo SYS": {t: SYS, type: held}
+  zmk_keycode_map:
+    LSHFT: Shift
+    RSHFT: Shift
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    RALT: Alt
+    LGUI: GUI
+    RGUI: GUI
+    BSPC: Bksp
+    COMMA: ','
+    DOT: '.'
+    FSLH: /
+    SEMI: ';'
+    COLON: ':'
+    ESC: Esc
+    DEL: Del
+    SPACE: Space
+    ENTER: Enter
+    TAB: Tab
+    PG_UP: PgUp
+    PG_DN: PgDn
+    HOME: Home
+    END: End
+    INS: Ins
+    LEFT: ←
+    RIGHT: →
+    UP: ↑
+    DOWN: ↓
+draw_config:
+  key_w: 64
+  key_h: 60
+  combo_w: 34
+  combo_h: 26

@@ -1,0 +1,199 @@
+layout: {zmk_keyboard: cradio}
+layers:
+  base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: Shift}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: GUI}
+  - G
+  - H
+  - {t: J, h: GUI}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: ;, h: Shift}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: Tab, h: sym}
+  - Enter
+  - Space
+  - {t: Bksp, h: nav}
+  sym:
+  - TILDE
+  - CARET
+  - PERCENT
+  - PIPE
+  - BACKSLASH
+  - LESS THAN
+  - GREATER THAN
+  - LEFT BRACKET
+  - RIGHT BRACKET
+  - DOUBLE QUOTES
+  - EXCLAMATION
+  - AMPERSAND
+  - ASTERISK
+  - MINUS
+  - EQUAL
+  - LEFT PARENTHESIS
+  - RIGHT PARENTHESIS
+  - LEFT BRACE
+  - RIGHT BRACE
+  - SQT
+  - AT SIGN
+  - HASH
+  - DOLLAR
+  - UNDERSCORE
+  - PLUS
+  - ':'
+  - SEMICOLON
+  - ','
+  - .
+  - QUESTION
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  nav:
+  - Esc
+  - Tab
+  - Ins
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Home
+  - PgDn
+  - PgUp
+  - End
+  - Del
+  - Shift
+  - Alt
+  - Ctrl
+  - GUI
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - Bksp
+  - CAPS WORD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: SYS, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  num:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - Shift
+  - Alt
+  - Ctrl
+  - GUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - .
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  sys:
+  - RESET
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RESET
+  - BOOT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '1'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BOOT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: BT, h: '2'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - STUDIO
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [16, 17]
+  k: Esc
+  l: [base]
+- p: [18, 19]
+  k: ':'
+  l: [base]
+- p: [27, 28]
+  k: '::'
+  l: [base]
+- p: [26, 27]
+  k: ->
+  l: [base]
+- p: [17, 18]
+  k: =>
+  l: [base]
+- p: [13, 14]
+  k: CAPS WORD
+  l: [base]
+- p: [0, 1]
+  k: Del
+  l: [base]

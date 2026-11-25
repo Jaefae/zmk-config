@@ -1,35 +1,54 @@
 # Xerneas
 ![alt text](https://github.com/Jaefae/zmk-config/blob/main/shinyxerneas.png?raw=true)
-## Disclaimer
-This is my personal configuration I use for the Sweep Bling LP (Shoutout KeebMaker)
-## Layout
-I use homerow mods with the main two layers of use being
-### Layer 1
 
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  W       │  L       │  Y       │  P       │  B       │   │  Z       │  F       │  O       │  U       │  ' "     │
-            &kp W      &kp L      &kp Y      &kp P      &kp B          &kp Z      &kp F      &kp O      &kp U      &kp SQT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  C       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │  A       │
-            HRML(C,        R,         S,         T)     &kp G          &kp M      HRMR(N,        E,         I,        A)
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Q       │  J       │  V       │  D       │  K       │   │ X        │  H       │ / ?      │  ,       │  .       │
-            &kp Q      &kp J      &kp V      &kp D      &kp K          &kp X      &kp H      &kp FSLH  &kp COMMA   &kp DOT
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp ENTER     &kp SPACE  &lt 1 BSPC
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-### Layer 2
+My ZMK config for a Sweep Bling LP (34 keys). Shoutout KeebMaker.
 
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SEMI
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            
+QWERTY with home-row mods, set up for C++ and Rust with some TS/React on the side. Firmware is built by the GitHub Action on every push.
+
+## Layers
+
+Home-row mods are A/; Shift, S/L Alt, D/K Ctrl and F/J GUI. A mod only kicks in when held with a key on the other hand, so same-hand rolls stay as letters. The small labels under the keys show the hold action, and the blue pills are combos.
+
+### Base
+![Base](keymap-drawer/cradio-base.svg)
+
+### SYM
+Hold the left outer thumb.
+
+![SYM](keymap-drawer/cradio-sym.svg)
+
+### NAV
+Hold the right outer thumb. The mods on the left home row are plain keys, so Shift/Ctrl + arrows work.
+
+![NAV](keymap-drawer/cradio-nav.svg)
+
+### NUM
+Hold SYM and NAV together.
+
+![NUM](keymap-drawer/cradio-num.svg)
+
+### SYS
+Reset, bootloader, Bluetooth select/clear and the Studio unlock key. Reached from the bottom-right key of NAV.
+
+![SYS](keymap-drawer/cradio-sys.svg)
+
+## Combos
+Base layer only.
+
+- J + K: Esc
+- L + ;: :
+- , + .: ::
+- M + ,: ->
+- K + L: =>
+- F + G: Caps Word
+- Q + W: Del
+
+## Drawings
+The images in `keymap-drawer/` come from [keymap-drawer](https://github.com/caksoylar/keymap-drawer). To regenerate them after a keymap change, run this from that folder:
+
+```
+keymap -c keymap_drawer.config.yaml parse -z ../config/cradio.keymap -o cradio.yaml
+keymap -c keymap_drawer.config.yaml draw --ortho-layout '{"split": true, "rows": 3, "columns": 5, "thumbs": 2}' -o cradio-base.svg cradio.yaml -s base
+```
+
+Change `base` and the output name for the other layers.
