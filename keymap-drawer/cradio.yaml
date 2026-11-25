@@ -36,36 +36,36 @@ layers:
   - Space
   - {t: Bksp, h: nav}
   sym:
-  - TILDE
-  - CARET
-  - PERCENT
-  - PIPE
-  - BACKSLASH
-  - LESS THAN
-  - GREATER THAN
-  - LEFT BRACKET
-  - RIGHT BRACKET
-  - DOUBLE QUOTES
-  - EXCLAMATION
-  - AMPERSAND
-  - ASTERISK
-  - MINUS
-  - EQUAL
-  - LEFT PARENTHESIS
-  - RIGHT PARENTHESIS
-  - LEFT BRACE
-  - RIGHT BRACE
-  - SQT
-  - AT SIGN
-  - HASH
-  - DOLLAR
-  - UNDERSCORE
-  - PLUS
+  - '~'
+  - ^
+  - '%'
+  - '|'
+  - \
+  - <
+  - '>'
+  - '['
+  - ']'
+  - '"'
+  - '!'
+  - '&'
+  - '*'
+  - '-'
+  - '='
+  - (
+  - )
+  - '{'
+  - '}'
+  - ''''
+  - '@'
+  - '#'
+  - $
+  - _
+  - +
   - ':'
-  - SEMICOLON
+  - ;
   - ','
   - .
-  - QUESTION
+  - '?'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

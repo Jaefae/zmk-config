@@ -37,6 +37,33 @@ parse_config:
     RIGHT: →
     UP: ↑
     DOWN: ↓
+    TILDE: '~'
+    CARET: '^'
+    PERCENT: '%'
+    PIPE: '|'
+    BACKSLASH: '\'
+    LESS_THAN: '<'
+    GREATER_THAN: '>'
+    LEFT_BRACKET: '['
+    RIGHT_BRACKET: ']'
+    DOUBLE_QUOTES: '"'
+    EXCLAMATION: '!'
+    AMPERSAND: '&'
+    ASTERISK: '*'
+    MINUS: '-'
+    EQUAL: '='
+    LEFT_PARENTHESIS: '('
+    RIGHT_PARENTHESIS: ')'
+    LEFT_BRACE: '{'
+    RIGHT_BRACE: '}'
+    SQT: ''''
+    AT_SIGN: '@'
+    HASH: '#'
+    DOLLAR: '$'
+    UNDERSCORE: '_'
+    PLUS: '+'
+    SEMICOLON: ';'
+    QUESTION: '?'
 draw_config:
   key_w: 64
   key_h: 60
